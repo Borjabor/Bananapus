@@ -17,12 +17,17 @@ public class PlayerMovement : MonoBehaviour
     private float _moveY;
     [SerializeField]
     private float _dashAmount = 3f;
+    [SerializeField]
     private float _dashCooldown = 2f;
-    private bool _isDashing;
-    private bool _firstButtonPressed;
+    private float _dashCDTimer;
+    private bool _isDashing = false;
+    private bool _firstInput = false;
+    private bool _secondInput = false;
+    private int _currKeyPressed;
+    private int _lastKeyPressed;
     private float _timeOfFirstButton;
     private bool _reset;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -36,9 +41,9 @@ public class PlayerMovement : MonoBehaviour
         GetInputs();
         _moveDir = new Vector3(_moveX, _moveY).normalized;
         
-        _animator.SetFloat("Horizontal", _movement.x);
-        _animator.SetFloat("Vertical", _movement.y);
-        _animator.SetFloat("Speed", _movement.sqrMagnitude);
+        _animator.SetFloat("Horizontal", _moveX);
+        _animator.SetFloat("Vertical", _moveY);
+        _animator.SetFloat("Speed", _moveDir.sqrMagnitude);
     }
 
     private void FixedUpdate()
@@ -48,10 +53,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void Move()
     {
-        if (!_isDashing)
-        {
-            _rb.velocity = _moveDir * _moveSpeed;
-        }else if (_isDashing)
+        _rb.velocity = _moveDir * _moveSpeed;
+        if (_isDashing)
         {
             Vector2 dashPosition = transform.position + _moveDir * _dashAmount;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, _moveDir, _dashAmount, _dashLayerMask);
@@ -70,45 +73,123 @@ public class PlayerMovement : MonoBehaviour
     {
         _moveX = Input.GetAxisRaw("Horizontal");
         _moveY = Input.GetAxisRaw("Vertical");
-        
-        if (Input.GetKeyDown(KeyCode.W))
-        {
-            
-        }
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            
-        }
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            
-        }
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            
-        }
 
         
-        if(Input.GetKeyDown(KeyCode.A) && _firstButtonPressed) {
-            if(Time.time - _timeOfFirstButton < 0.5f) {
-                Debug.Log("DoubleClicked");
-                _isDashing = true;
-            } else {
-                Debug.Log("Too late");
-                _isDashing = false;
+        if (_dashCDTimer <= 0f)
+        {
+            if(_secondInput && _firstInput) 
+            {
+                if(Time.time - _timeOfFirstButton < 0.5f) {
+                    Debug.Log("DoubleClicked");
+                    _isDashing = true;
+                } else {
+                    Debug.Log("Too late");
+                    _reset = true;
+                }
+ 
+                _reset = true;
             }
  
-            _reset = true;
-        }
+            if (Input.GetKeyDown(KeyCode.W))
+            {
+                if (!_firstInput)
+                {
+                    _lastKeyPressed = 1;
+                    _firstInput = true;
+                    _timeOfFirstButton = Time.time;
+                }else
+                {
+                    _currKeyPressed = 1;
+                    if (_currKeyPressed == _lastKeyPressed)
+                    {
+                        _secondInput = true;
+                    }
+                    else
+                    {
+                        _lastKeyPressed = 1;
+                        _timeOfFirstButton = Time.time;
+                    }
+                    
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.S))
+            {
+                if (!_firstInput)
+                {
+                    _lastKeyPressed = 2;
+                    _firstInput = true;
+                    _timeOfFirstButton = Time.time;
+                }else
+                {
+                    _currKeyPressed = 2;
+                    if (_currKeyPressed == _lastKeyPressed)
+                    {
+                        _secondInput = true;
+                    }
+                    else
+                    {
+                        _lastKeyPressed = 2;
+                        _timeOfFirstButton = Time.time;
+                    }
+                    
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.A))
+            {
+                if (!_firstInput)
+                {
+                    _lastKeyPressed = 3;
+                    _firstInput = true;
+                    _timeOfFirstButton = Time.time;
+                }else
+                {
+                    _currKeyPressed = 3;
+                    if (_currKeyPressed == _lastKeyPressed)
+                    {
+                        _secondInput = true;
+                    }
+                    else
+                    {
+                        _lastKeyPressed = 3;
+                        _timeOfFirstButton = Time.time;
+                    }
+                    
+                }
+            }
+            if (Input.GetKeyDown(KeyCode.D))
+            {
+                if (!_firstInput)
+                {
+                    _lastKeyPressed = 4;
+                    _firstInput = true;
+                    _timeOfFirstButton = Time.time;
+                }else
+                {
+                    _currKeyPressed = 4;
+                    if (_currKeyPressed == _lastKeyPressed)
+                    {
+                        _secondInput = true;
+                    }
+                    else
+                    {
+                        _lastKeyPressed = 4;
+                        _timeOfFirstButton = Time.time;
+                    }
+                    
+                }
+            }
  
-        if(Input.GetKeyDown(KeyCode.A) && !_firstButtonPressed) {
-            _firstButtonPressed = true;
-            _timeOfFirstButton = Time.time;
+            if(_reset) 
+            {
+                _firstInput = false;
+                _secondInput = false;
+                _reset = false;
+                _dashCDTimer = _dashCooldown;
+            }
         }
- 
-        if(_reset) {
-            _firstButtonPressed = false;
-            _reset = false;
+        else
+        {
+            _dashCDTimer -= Time.deltaTime;
         }
         
     }
