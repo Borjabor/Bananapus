@@ -66,7 +66,7 @@ public class PlayerMovement : MonoBehaviour
             _isDashing = false;
         }
         //_rb.velocity = _moveDir * _moveSpeed;
-        //CheckForFlipping();
+        CheckForFlipping();
     }
 
     private void GetInputs()
@@ -196,8 +196,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void CheckForFlipping()
     {
-        bool movingLeft = _movement.x < 0;
-        bool movingRight = _movement.x > 0;
+        bool movingLeft = _moveX < 0;
+        bool movingRight = _moveX > 0;
 
         if (movingLeft)
         {

@@ -11,20 +11,24 @@ public class PlayerAttack : MonoBehaviour
      check for hold (later)
      each attack detects targets and deals increasing damage
      */
-    private GameObject attackArea = default;
+    [SerializeField]
+    private GameObject _attackArea01;
+    [SerializeField]
+    private GameObject _attackArea02;
+    [SerializeField]
+    private GameObject _attackArea03;
+    
 
     private bool attacking = false;
 
     private float timeToAttack = 0.25f;
     private float timer = 0f;
 
-    // Start is called before the first frame update
     void Start()
     {
-        attackArea = transform.GetChild(0).gameObject;
+        
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space))
@@ -40,7 +44,7 @@ public class PlayerAttack : MonoBehaviour
             {
                 timer = 0;
                 attacking = false;
-                attackArea.SetActive(attacking);
+                _attackArea01.SetActive(attacking);
             }
 
         }
@@ -49,6 +53,6 @@ public class PlayerAttack : MonoBehaviour
     private void Attack()
     {
         attacking = true;
-        attackArea.SetActive(attacking);
+        _attackArea01.SetActive(attacking);
     }
 }
