@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
+    
+    /*
+     timer to check if the player pressed the attack button in time for combo
+     timer that serves as a cooldown so the player cant spam the attack as fast they can
+     check for hold (later)
+     each attack detects targets and deals increasing damage
+     */
     private GameObject attackArea = default;
 
     private bool attacking = false;
