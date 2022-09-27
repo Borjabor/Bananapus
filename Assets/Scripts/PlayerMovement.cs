@@ -80,10 +80,10 @@ public class PlayerMovement : MonoBehaviour
             if(_secondInput && _firstInput) 
             {
                 if(Time.time - _timeOfFirstButton < 0.5f) {
-                    Debug.Log("DoubleClicked");
+                    //Debug.Log("DoubleClicked");
                     _isDashing = true;
                 } else {
-                    Debug.Log("Too late");
+                    //Debug.Log("Too late");
                     _reset = true;
                 }
  
