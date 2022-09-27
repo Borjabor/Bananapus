@@ -27,7 +27,7 @@ public class PlayerAttack : MonoBehaviour
     private float _comboTime = 0.5f;
     private float _comboTimer;
     private float _timeToAttack = 0.25f;
-    private float _timer = 0f;
+    //private float _timer = 0f;
     private int _comboCounter = 0;
 
     void Start()
