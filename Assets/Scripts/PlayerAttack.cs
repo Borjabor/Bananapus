@@ -4,44 +4,116 @@ using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
 {
-    private GameObject attackArea = default;
+    
+    /*
+     timer to check if the player pressed the attack button in time for combo
+     timer that serves as a cooldown so the player cant spam the attack as fast they can
+     check for hold (later)
+     each attack detects targets and deals increasing damage
+     */
+    [SerializeField]
+    private GameObject _attackArea01;
+    [SerializeField]
+    private GameObject _attackArea02;
+    [SerializeField]
+    private GameObject _attackArea03;
+    
 
-    private bool attacking = false;
+    private bool _attacking = false;
+    private bool _hasAttacked = false;
 
-    private float timeToAttack = 0.25f;
-    private float timer = 0f;
+    private float _attackCooldown = 0.7f;
+    private float _cooldownTimer;
+    private float _comboTime = 0.5f;
+    private float _comboTimer;
+    private float _timeToAttack = 0.25f;
+    //private float _timer = 0f;
+    private int _comboCounter = 0;
 
-    // Start is called before the first frame update
     void Start()
     {
-        attackArea = transform.GetChild(0).gameObject;
+        _cooldownTimer = _attackCooldown;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Space))
+        GetInputs();
+        
+        if(_hasAttacked)
         {
-            Attack();
+            //Debug.Log(Time.time - _comboTimer);
+            if (Time.time - _comboTimer >= _comboTime)
+            {
+                _comboCounter = 0;
+                _hasAttacked = false;
+                _comboTimer = 0;
+            }
         }
 
-        if(attacking)
+        /*if(_attacking)
         {
-            timer += Time.deltaTime;
+            _timer += Time.deltaTime;
 
-            if(timer >= timeToAttack)
+            if(_timer >= _timeToAttack)
             {
-                timer = 0;
-                attacking = false;
-                attackArea.SetActive(attacking);
+                _timer = 0;
+                _attacking = false;
+                _attackArea01.SetActive(_attacking);
             }
 
-        }
+        }*/
     }
 
-    private void Attack()
+    private void GetInputs()
     {
-        attacking = true;
-        attackArea.SetActive(attacking);
+        if(Input.GetKeyDown(KeyCode.Space) && !_attacking)
+        {
+            _comboCounter++;
+            //Attack(_comboCounter);
+            StartCoroutine(Attack(_comboCounter));
+        }
+
+    }
+
+    /*private void Attack(int combo)
+    {
+        _attacking = true;
+        _attackArea01.SetActive(_attacking);
+    }*/
+
+    private IEnumerator Attack(int combo)
+    {
+        _attacking = true;
+        if (combo == 1)
+        {
+            _attackArea01.SetActive(_attacking);
+            yield return new WaitForSeconds(_timeToAttack);
+            _attacking = false;
+            _attackArea01.SetActive(_attacking);
+            _comboTimer = Time.time;
+            _hasAttacked = true;
+        }else if(combo ==2)
+        {
+            _attackArea02.SetActive(_attacking);
+            yield return new WaitForSeconds(_timeToAttack);
+            _attacking = false;
+            _attackArea02.SetActive(_attacking);
+            _comboTimer = Time.time;
+            _hasAttacked = true;
+        }else if (combo == 3)
+        {
+            _attackArea03.SetActive(_attacking);
+            yield return new WaitForSeconds(_timeToAttack);
+            _attacking = false;
+            _attackArea03.SetActive(_attacking);
+            _comboTimer = Time.time;
+            _hasAttacked = true;
+        }else if (combo >= 4)
+        {
+            yield return new WaitForSeconds(_timeToAttack);
+            _attacking = false;
+            _comboCounter = 0;
+        }
+        
     }
 }
