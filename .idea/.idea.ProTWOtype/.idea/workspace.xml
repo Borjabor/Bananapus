@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="dac63898-ec31-46d9-8c37-65ce7a821b0e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProTWOtype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProTWOtype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Player_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Player_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TestingScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TestingScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/AttackArea.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/AttackArea.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Prjectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Prjectile.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Projectile.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +81,7 @@
       <updated>1663980410572</updated>
       <workItem from="1663980415802" duration="4252000" />
       <workItem from="1664054125447" duration="9489000" />
-      <workItem from="1664224074721" duration="22369000" />
+      <workItem from="1664224074721" duration="24328000" />
     </task>
     <servers />
   </component>

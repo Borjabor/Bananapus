@@ -8,7 +8,11 @@ public class Projectile : MonoBehaviour
     private GameObject _target;
     private Vector2 _targetPosition;
     private Vector3 _normalizeDirection;
+    [SerializeField]
     private float _speed = 2f;
+
+    [SerializeField] private int  _damage;
+    
     private float _timeToDestroy = 7f;
     private float _timer;
 
@@ -30,8 +34,15 @@ public class Projectile : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
+        if(other.GetComponent<Health>() != null && other.gameObject.CompareTag("Player"))
+        {
+            Health health = other.GetComponent<Health>();
+            Debug.Log($"hit");
+            health.Damage(_damage);
+        }
+        
         if (!other.gameObject.CompareTag("Enemy"))
         {
             Destroy(gameObject);
