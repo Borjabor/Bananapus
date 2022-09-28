@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
     private int MAX_HEALTH = 100;
 
     // Update is called once per frame
-    void Update()
+    /*void Update()
     {
         if (Input.GetKeyDown(KeyCode.D))
         {
@@ -20,7 +20,7 @@ public class Health : MonoBehaviour
         {
             // Heal(10);
         }
-    }
+    }*/
 
     public void Damage(int amount)
     {
@@ -58,7 +58,7 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        Debug.Log("I am Dead!");
+        //Debug.Log("I am Dead!");
         Destroy(gameObject);
     }
 }
