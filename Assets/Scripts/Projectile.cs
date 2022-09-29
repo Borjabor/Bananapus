@@ -11,7 +11,7 @@ public class Projectile : MonoBehaviour
     [SerializeField]
     private float _speed = 2f;
 
-    [SerializeField] private int  _damage;
+    [SerializeField] private int _damage = 10;
     
     private float _timeToDestroy = 7f;
     private float _timer;
