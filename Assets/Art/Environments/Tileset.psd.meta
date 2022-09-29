@@ -3,7 +3,7 @@ guid: 133489fdee5591341a06ce5395d73a74
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 12
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -63,7 +63,6 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
-  cookieLightType: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -91,6 +90,30 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1465,13 +1488,13 @@ TextureImporter:
       Tileset_32: -668922334
       Tileset_22: 1791313611
       Tileset_9: 1117077765
-      Tileset_0: -551108317
-      Tileset_39: 1396698563
-      Tileset_41: -844356005
       Tileset_34: -726807951
-      Tileset_7: 1839445391
-      Tileset_12: 1148244750
+      Tileset_0: -551108317
+      Tileset_41: -844356005
       Tileset_42: 291508886
+      Tileset_39: 1396698563
+      Tileset_12: 1148244750
+      Tileset_7: 1839445391
       Tileset_4: -525950287
       Tileset_57: -68056208
       Tileset_61: 1237483331
