@@ -39,7 +39,7 @@ public class Projectile : MonoBehaviour
         if(other.GetComponent<Health>() != null && other.gameObject.CompareTag("Player"))
         {
             Health health = other.GetComponent<Health>();
-            Debug.Log($"hit");
+            //Debug.Log($"hit");
             health.Damage(_damage);
         }
         

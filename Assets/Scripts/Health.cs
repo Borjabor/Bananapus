@@ -1,12 +1,27 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
-    [SerializeField] private int health = 100;
+    public int _health = 100;
+    [SerializeField] private SimpleFlash _flash;
 
-    private int MAX_HEALTH = 100;
+    private int _maxHealth;
+    private Vector3 _checkpoint;
+    [SerializeField]
+    private AudioSource _audioSource;
+    [SerializeField] 
+    private AudioClip _deathAudio;
+    [SerializeField]
+    private Renderer _sRenderer;
+
+    private void Awake()
+    {
+        _maxHealth = _health;
+        _sRenderer = GetComponent<SpriteRenderer>();
+    }
 
     // Update is called once per frame
     /*void Update()
@@ -29,9 +44,10 @@ public class Health : MonoBehaviour
             throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
         }
 
-        this.health -= amount;
+        this._health -= amount;
+        _flash.Flash();
 
-        if(health <= 0)
+        if(_health <= 0)
         {
             Die();
         }
@@ -44,21 +60,62 @@ public class Health : MonoBehaviour
             throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
         }
 
-        bool wouldBeOverMaxHealth = health + amount > MAX_HEALTH;
+        bool wouldBeOverMaxHealth = _health + amount > _maxHealth;
 
         if (wouldBeOverMaxHealth)
         {
-            this.health = MAX_HEALTH;
+            this._health = _maxHealth;
         }
         else
         {
-            this.health += amount;
+            this._health += amount;
         }
     }
 
     private void Die()
     {
         //Debug.Log("I am Dead!");
+        if (gameObject.tag != "Player")
+        {
+            StartCoroutine(Destroy());
+        }
+        else
+        {
+            StartCoroutine(Respawn());
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Checkpoint"))
+        {
+            _checkpoint = other.transform.position;
+        }
+    }
+
+    private IEnumerator Respawn()
+    {
+        //_audioSource.PlayOneShot(_deathAudio);
+        _sRenderer.enabled = false;
+        Debug.Log($"got here");
+        yield return new WaitForSeconds(1.5f);
+        transform.position = _checkpoint;
+        _sRenderer.enabled = true;
+        _flash.Flash();
+        yield return new WaitForSeconds(0.2f);
+        _flash.Flash();
+        yield return new WaitForSeconds(0.2f);
+        _flash.Flash();
+        _health = _maxHealth;
+    }
+
+    private IEnumerator Destroy()
+    {
+        _flash.Flash();
+        yield return new WaitForSeconds(0.2f);
+        _flash.Flash();
+        yield return new WaitForSeconds(0.2f);
+        _flash.Flash();
         Destroy(gameObject);
     }
 }

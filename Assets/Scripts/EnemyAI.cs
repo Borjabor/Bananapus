@@ -22,11 +22,18 @@ public class EnemyAI : MonoBehaviour
     private bool _attacking;
     private float _timeToAttack = 0.25f;
     private float _timer = 0f;
+    private Health _health;
+    private Rigidbody2D _rb;
+
+    private void Awake()
+    {
+        _health = GetComponent<Health>();
+        _rb = GetComponent<Rigidbody2D>();
+    }
 
     private void Update()
     {
         if (_player == null) return;
-
         float distance = Vector2.Distance(_player.position, transform.position);
         if (distance < _chaseDistanceThreshold)
         {
@@ -39,6 +46,9 @@ public class EnemyAI : MonoBehaviour
                     _passedTime = 0f;
                     Attack();
                 }
+            }else if (_health._health <= 0)
+            {
+                transform.position = transform.position;
             }
             else
             {
@@ -46,6 +56,8 @@ public class EnemyAI : MonoBehaviour
                 //Debug.Log($"Chase");
                 Vector3 direction = (_player.position - transform.position).normalized;
                 transform.position += direction * _moveSpeed * Time.deltaTime;
+                //_rb.MovePosition(transform.position += direction * _moveSpeed * Time.deltaTime);
+                //_rb.velocity = direction * _moveSpeed;
             }
         }
 
