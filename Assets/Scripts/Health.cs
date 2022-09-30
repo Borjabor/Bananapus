@@ -17,6 +17,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     private Renderer _sRenderer;
 
+    public Animator myanimator;
+
     private void Awake()
     {
         _maxHealth = _health;
@@ -43,7 +45,7 @@ public class Health : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
         }
-
+        myanimator.SetTrigger("TakeDamage");
         this._health -= amount;
         _flash.Flash();
 
@@ -75,6 +77,7 @@ public class Health : MonoBehaviour
     private void Die()
     {
         //Debug.Log("I am Dead!");
+        myanimator.SetBool("IsDead", true);
         if (gameObject.tag != "Player")
         {
             StartCoroutine(Destroy());
