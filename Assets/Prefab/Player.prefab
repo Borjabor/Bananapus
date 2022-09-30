@@ -479,13 +479,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 491153b7f4b64d6479160199cbed4d0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _moveSpeed: 3
-  _animator: {fileID: 0}
+  _moveSpeed: 4
+  _animator: {fileID: 1421426891321977135}
   _dashLayerMask:
     serializedVersion: 2
     m_Bits: 192
-  _dashAmount: 3
-  _dashCooldown: 2
+  _dashAmount: 5
+  _dashCooldown: 0.5
 --- !u!114 &176141637898728426
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -658,7 +658,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1940970238, guid: d6973717cf73da0449dcfd7d2aa9436b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -680,7 +680,7 @@ Animator:
   m_GameObject: {fileID: 2446132983909609214}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 61556b12b95ef804691a33879d19d35f, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
