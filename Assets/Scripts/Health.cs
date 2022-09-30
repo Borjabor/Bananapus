@@ -17,6 +17,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     private Renderer _sRenderer;
 
+    public Animator myanimator;
+
     private void Awake()
     {
         _maxHealth = _health;
@@ -43,7 +45,7 @@ public class Health : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
         }
-
+        myanimator.SetTrigger("TakeDamage");
         this._health -= amount;
         _flash.Flash();
 
@@ -82,6 +84,8 @@ public class Health : MonoBehaviour
         else
         {
             StartCoroutine(Respawn());
+            myanimator.SetBool("IsDead", false);
+
         }
     }
 
@@ -96,6 +100,7 @@ public class Health : MonoBehaviour
     private IEnumerator Respawn()
     {
         //_audioSource.PlayOneShot(_deathAudio);
+        myanimator.SetBool("IsDead", true);
         _sRenderer.enabled = false;
         Debug.Log($"got here");
         yield return new WaitForSeconds(1.5f);
