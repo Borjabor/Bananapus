@@ -77,7 +77,6 @@ public class Health : MonoBehaviour
     private void Die()
     {
         //Debug.Log("I am Dead!");
-        myanimator.SetBool("IsDead", true);
         if (gameObject.tag != "Player")
         {
             StartCoroutine(Destroy());
@@ -85,6 +84,8 @@ public class Health : MonoBehaviour
         else
         {
             StartCoroutine(Respawn());
+            myanimator.SetBool("IsDead", false);
+
         }
     }
 
@@ -99,6 +100,7 @@ public class Health : MonoBehaviour
     private IEnumerator Respawn()
     {
         //_audioSource.PlayOneShot(_deathAudio);
+        myanimator.SetBool("IsDead", true);
         _sRenderer.enabled = false;
         Debug.Log($"got here");
         yield return new WaitForSeconds(1.5f);
