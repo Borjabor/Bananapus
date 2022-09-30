@@ -84,8 +84,6 @@ public class Health : MonoBehaviour
         else
         {
             StartCoroutine(Respawn());
-            myanimator.SetBool("IsDead", false);
-
         }
     }
 
@@ -101,10 +99,11 @@ public class Health : MonoBehaviour
     {
         //_audioSource.PlayOneShot(_deathAudio);
         myanimator.SetBool("IsDead", true);
+        yield return new WaitForSeconds(1.5f);
         _sRenderer.enabled = false;
         Debug.Log($"got here");
-        yield return new WaitForSeconds(1.5f);
         transform.position = _checkpoint;
+        myanimator.SetBool("IsDead", false);
         _sRenderer.enabled = true;
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
