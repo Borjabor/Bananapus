@@ -27,6 +27,7 @@ public class PlayerMovement : MonoBehaviour
     private int _lastKeyPressed;
     private float _timeOfFirstButton;
     private bool _reset;
+    public bool _isRespawning = false;
 
 
     // Start is called before the first frame update
@@ -44,6 +45,7 @@ public class PlayerMovement : MonoBehaviour
         _animator.SetFloat("Horizontal", _moveX);
         _animator.SetFloat("Vertical", _moveY);
         _animator.SetFloat("Speed", _moveDir.sqrMagnitude);
+        
     }
 
     private void FixedUpdate()
@@ -65,7 +67,6 @@ public class PlayerMovement : MonoBehaviour
             _rb.MovePosition(dashPosition);
             _isDashing = false;
         }
-        //_rb.velocity = _moveDir * _moveSpeed;
         CheckForFlipping();
     }
 
