@@ -12,7 +12,7 @@ public class AttackArea : MonoBehaviour
         if(collider.GetComponent<Health>() != null)
         {
             Health health = collider.GetComponent<Health>();
-            Debug.Log($"hit");
+            //Debug.Log($"hit");
             health.Damage(damage);
         }
     }
