@@ -144,6 +144,8 @@ MonoBehaviour:
   _audioSource: {fileID: 0}
   _deathAudio: {fileID: 0}
   _sRenderer: {fileID: 2646001990712214237}
+  _dropChance: 0.1
+  _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
 --- !u!114 &2646001990712214232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,7 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6cc180ed446cc34d9cf4e364edae640, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _player: {fileID: 0}
   _chaseDistanceThreshold: 10
   _attackDistanceThreshold: 0.8
   _attackDelay: 1
@@ -250,7 +251,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f9d2f57a87c86aa4e8c2e6eb19ac75bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 10
+  _damage: 10
 --- !u!1 &2646001992253394351
 GameObject:
   m_ObjectHideFlags: 0
