@@ -24,6 +24,10 @@ public class PlayerAttack : MonoBehaviour
     private bool _attacking = false;
     private bool _hasAttacked = false;
 
+    [SerializeField]
+    private AudioSource _Attack1;
+
+
     private float _attackCooldown = 0.7f;
     private float _cooldownTimer;
     private float _comboTime = 0.5f;
@@ -89,6 +93,7 @@ public class PlayerAttack : MonoBehaviour
         if (combo == 1)
         {
             _animator.SetTrigger("Attack1");
+            _Attack1.Play();
             _attackArea01.SetActive(_attacking);
             yield return new WaitForSeconds(_timeToAttack);
             _attacking = false;

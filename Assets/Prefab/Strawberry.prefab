@@ -88,7 +88,7 @@ MonoBehaviour:
   repathRateCompatibility: NaN
   canSearchCompability: 0
   orientation: 1
-  enableRotation: 1
+  enableRotation: 0
   autoRepath:
     mode: 2
     interval: 0.5
@@ -193,6 +193,10 @@ PrefabInstance:
     - target: {fileID: 2646001990712214239, guid: a72f6b70201566d4da388ef810084837, type: 3}
       propertyPath: _health
       value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 2646001990712214239, guid: a72f6b70201566d4da388ef810084837, type: 3}
+      propertyPath: _DamageParticles
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2646001991092948081, guid: a72f6b70201566d4da388ef810084837, type: 3}
       propertyPath: m_Layer
