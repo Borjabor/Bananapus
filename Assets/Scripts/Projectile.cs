@@ -18,7 +18,7 @@ public class Projectile : MonoBehaviour
 
     private void Start()
     {
-        _targetPosition = ShootProjectile._playerPosition;
+        _targetPosition = HostileSpawner._playerPosition;
         _normalizeDirection = (_targetPosition - (Vector2)transform.position).normalized;
     }
 

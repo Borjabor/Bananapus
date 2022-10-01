@@ -17,6 +17,8 @@ public class PlayerAttack : MonoBehaviour
     private GameObject _attackArea02;
     [SerializeField]
     private GameObject _attackArea03;
+
+    public Animator _animator;
     
 
     private bool _attacking = false;
@@ -86,6 +88,7 @@ public class PlayerAttack : MonoBehaviour
         _attacking = true;
         if (combo == 1)
         {
+            _animator.SetTrigger("Attack1");
             _attackArea01.SetActive(_attacking);
             yield return new WaitForSeconds(_timeToAttack);
             _attacking = false;
