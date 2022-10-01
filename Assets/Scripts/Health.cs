@@ -7,10 +7,13 @@ using Random = UnityEngine.Random;
 
 public class Health : MonoBehaviour
 {
+    private Rigidbody2D _rb;
+    private int _strength = 15;
     public int _health = 100;
     [HideInInspector]
     public int MaxHealth;
     [SerializeField] private SimpleFlash _flash;
+    public HealthBar HealthBar;
 
     private Vector3 _checkpoint;
     [SerializeField]
@@ -30,6 +33,11 @@ public class Health : MonoBehaviour
     {
         MaxHealth = _health;
         _sRenderer = GetComponent<SpriteRenderer>();
+        _rb = GetComponent<Rigidbody2D>();
+        if (gameObject.tag == "Player")
+        {
+            HealthBar.SetMaxhealth(MaxHealth);
+        }
     }
 
     // Update is called once per frame
@@ -55,6 +63,11 @@ public class Health : MonoBehaviour
         myanimator.SetTrigger("TakeDamage");
         this._health -= amount;
         _flash.Flash();
+        
+        if (gameObject.tag == "Player")
+        {
+            HealthBar.SetHealth(_health);
+        }
 
         if(_health <= 0)
         {
@@ -78,6 +91,11 @@ public class Health : MonoBehaviour
         else
         {
             this._health += amount;
+        }
+        
+        if (gameObject.tag == "Player")
+        {
+            HealthBar.SetHealth(_health);
         }
     }
 
@@ -108,10 +126,10 @@ public class Health : MonoBehaviour
         myanimator.SetBool("IsDead", true);
         yield return new WaitForSeconds(1.5f);
         _sRenderer.enabled = false;
-        Debug.Log($"got here");
         transform.position = _checkpoint;
         myanimator.SetBool("IsDead", false);
         _sRenderer.enabled = true;
+        HealthBar.SetHealth(_health);
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
