@@ -7,18 +7,14 @@ public class EnemyDeathCount : MonoBehaviour
 {
     public static int KillCount = 0;
     [SerializeField] 
-    private int _killGoal = 10;
+    private int _killGoal = 100;
     [SerializeField] 
     private GameObject _winMessage;
     
-    
-    void Start()
-    {
-        
-    }
     void Update()
     {
-        if (KillCount >= _killGoal || Input.GetKeyDown(KeyCode.Alpha1))
+        if(Input.GetKeyDown(KeyCode.Alpha1)) KillCount++;
+        if (KillCount >= _killGoal)
         {
             StartCoroutine(Victory());
         }
