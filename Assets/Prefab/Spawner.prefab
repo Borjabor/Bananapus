@@ -13,7 +13,7 @@ GameObject:
   m_Layer: 0
   m_Name: Spawner
   m_TagString: Untagged
-  m_Icon: {fileID: 0}
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
@@ -44,6 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bc5b3027e0fcf540a9e7a4a802fcf1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _spawnedEntity: {fileID: 2646001990712214238, guid: a72f6b70201566d4da388ef810084837, type: 3}
+  _timeBetweenSpawns: 2
+  _spawnedEntity: {fileID: 0}
   _player: {fileID: 0}
-  _chaseDistanceThreshold: 20
+  _spawnDistanceThreshold: 10
+  _amountToSpawn: 1
