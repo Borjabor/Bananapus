@@ -21,6 +21,8 @@ public class Health : MonoBehaviour
     [SerializeField] 
     private AudioClip _deathAudio;
     [SerializeField]
+    private AudioSource _damageAudio;
+    [SerializeField]
     private Renderer _sRenderer;
     [SerializeField] 
     private int _dropChance = 10;
@@ -63,6 +65,7 @@ public class Health : MonoBehaviour
         {
             throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
         }
+        _damageAudio.Play();
         myanimator.SetTrigger("TakeDamage");
         _DamageParticles.Play();
         this._health -= amount;

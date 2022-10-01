@@ -134,7 +134,7 @@ TextureImporter:
         width: 9
         height: 9
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -142,6 +142,69 @@ TextureImporter:
       bones: []
       spriteID: 55f73d84fb135b746b9cda3c7d0f2547
       internalID: 1939488119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash 1_2
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 897
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 642aa53b7f405f341a2af64f3db806f9
+      internalID: 2092071655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash 1_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 900
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0fed7837b3ff45438ecb35d29a1793f
+      internalID: -629472988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash 1_4
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 901
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c2cbb6ab5e0e2d4085ddf6fd7a490d9
+      internalID: 462797335
       vertices: []
       indices: 
       edges: []
@@ -158,7 +221,10 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       Slash 1_1: 1939488119
+      Slash 1_4: 462797335
+      Slash 1_3: -629472988
       Slash 1_0: 1501815661
+      Slash 1_2: 2092071655
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
