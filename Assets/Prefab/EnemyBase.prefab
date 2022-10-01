@@ -10,12 +10,12 @@ GameObject:
   m_Component:
   - component: {fileID: 2646001990712214234}
   - component: {fileID: 2646001990712214237}
+  - component: {fileID: -7376644037900365142}
   - component: {fileID: 2646001990712214235}
   - component: {fileID: 2646001990712214236}
   - component: {fileID: 2646001990712214239}
   - component: {fileID: 2646001990712214232}
   - component: {fileID: 2646001990712214233}
-  - component: {fileID: -7376644037900365142}
   m_Layer: 0
   m_Name: EnemyBase
   m_TagString: Enemy
@@ -91,6 +91,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &-7376644037900365142
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2646001990712214238}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b0eae7c47f11f7641916b8db96346d65, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &2646001990712214235
 Rigidbody2D:
   serializedVersion: 4
@@ -180,26 +200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashMaterial: {fileID: 2100000, guid: def1139856693694e9659e0d0d307eba, type: 2}
   duration: 0.125
---- !u!95 &-7376644037900365142
-Animator:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2646001990712214238}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b0eae7c47f11f7641916b8db96346d65, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &2646001991092948081
 GameObject:
   m_ObjectHideFlags: 0
