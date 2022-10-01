@@ -50,10 +50,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 10
+  MaxHealth: 0
   _flash: {fileID: 1307453765}
   _audioSource: {fileID: 0}
   _deathAudio: {fileID: 0}
   _sRenderer: {fileID: 6686923994015714805}
+  _dropChance: 0
+  _droppedLoot: {fileID: 0}
   myanimator: {fileID: 1307453767}
 --- !u!50 &1625007366048262342
 Rigidbody2D:

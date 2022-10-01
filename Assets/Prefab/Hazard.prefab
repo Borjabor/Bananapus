@@ -145,7 +145,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -5
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.5566038, g: 0.22316661, b: 0.22316661, a: 1}
   m_FlipX: 0
@@ -184,7 +184,7 @@ Transform:
   m_GameObject: {fileID: 7671544400871863909}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.79, y: 2.33, z: -0.03495001}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7671544400469763631}
@@ -205,7 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _attackArea: {fileID: 7671544400373607126}
-  _attackDelay: 1
+  _attackDelay: 0.5
 --- !u!61 &7671544400871863910
 BoxCollider2D:
   m_ObjectHideFlags: 0
