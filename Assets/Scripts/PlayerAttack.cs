@@ -26,6 +26,10 @@ public class PlayerAttack : MonoBehaviour
 
     [SerializeField]
     private AudioSource _Attack1;
+    [SerializeField]
+    private AudioSource _Attack2;
+    [SerializeField]
+    private AudioSource _Attack3;
 
 
     private float _attackCooldown = 0.7f;
@@ -102,6 +106,7 @@ public class PlayerAttack : MonoBehaviour
             _hasAttacked = true;
         }else if(combo ==2)
         {
+            _Attack2.Play();
             _attackArea02.SetActive(_attacking);
             yield return new WaitForSeconds(_timeToAttack);
             _attacking = false;
@@ -110,6 +115,7 @@ public class PlayerAttack : MonoBehaviour
             _hasAttacked = true;
         }else if (combo == 3)
         {
+            _Attack3.Play();
             _attackArea03.SetActive(_attacking);
             yield return new WaitForSeconds(_timeToAttack);
             _attacking = false;
