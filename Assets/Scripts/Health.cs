@@ -27,6 +27,9 @@ public class Health : MonoBehaviour
     [SerializeField] 
     private GameObject _droppedLoot;
 
+    [SerializeField]
+    private ParticleSystem _DamageParticles;
+
     public Animator myanimator;
 
     private void Awake()
@@ -61,6 +64,7 @@ public class Health : MonoBehaviour
             throw new System.ArgumentOutOfRangeException("Cannot have negative Damage");
         }
         myanimator.SetTrigger("TakeDamage");
+        _DamageParticles.Play();
         this._health -= amount;
         _flash.Flash();
         
