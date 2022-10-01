@@ -24,6 +24,7 @@ public class EnemyAI : MonoBehaviour
     private Health _health;
     private Rigidbody2D _rb;
 
+    
     private void Awake()
     {
         _health = GetComponent<Health>();
@@ -101,4 +102,5 @@ public class EnemyAI : MonoBehaviour
             transform.localScale = new Vector3(1f, transform.localScale.y);
         }    
     }
+
 }

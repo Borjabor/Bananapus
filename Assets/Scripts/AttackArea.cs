@@ -6,7 +6,6 @@ public class AttackArea : MonoBehaviour
 {
     [SerializeField]
     private int _damage = 10;
-
     private void OnTriggerEnter2D(Collider2D collider)
     {
         if(collider.GetComponent<Health>() != null)
