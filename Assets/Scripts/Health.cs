@@ -2,13 +2,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
+
 
 public class Health : MonoBehaviour
 {
     public int _health = 100;
+    [HideInInspector]
+    public int MaxHealth;
     [SerializeField] private SimpleFlash _flash;
 
-    private int _maxHealth;
     private Vector3 _checkpoint;
     [SerializeField]
     private AudioSource _audioSource;
@@ -16,10 +19,14 @@ public class Health : MonoBehaviour
     private AudioClip _deathAudio;
     [SerializeField]
     private Renderer _sRenderer;
+    [SerializeField] 
+    private int _dropChance = 10;
+    [SerializeField] 
+    private GameObject _droppedLoot;
 
     private void Awake()
     {
-        _maxHealth = _health;
+        MaxHealth = _health;
         _sRenderer = GetComponent<SpriteRenderer>();
     }
 
@@ -60,11 +67,11 @@ public class Health : MonoBehaviour
             throw new System.ArgumentOutOfRangeException("Cannot have negative healing");
         }
 
-        bool wouldBeOverMaxHealth = _health + amount > _maxHealth;
+        bool wouldBeOverMaxHealth = _health + amount > MaxHealth;
 
         if (wouldBeOverMaxHealth)
         {
-            this._health = _maxHealth;
+            this._health = MaxHealth;
         }
         else
         {
@@ -106,7 +113,7 @@ public class Health : MonoBehaviour
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
-        _health = _maxHealth;
+        _health = MaxHealth;
     }
 
     private IEnumerator Destroy()
@@ -116,6 +123,10 @@ public class Health : MonoBehaviour
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
+        if (Random.value < (_dropChance * 0.1f))
+        {
+            Instantiate(_droppedLoot, transform.position, Quaternion.identity);
+        }
         Destroy(gameObject);
     }
 }

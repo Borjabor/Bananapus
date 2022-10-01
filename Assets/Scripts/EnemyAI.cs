@@ -5,8 +5,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {
-    [SerializeField] 
-    private Transform _player;
+    private Vector3 _playerPosition;
     
     [SerializeField] 
     private float _chaseDistanceThreshold = 3f, _attackDistanceThreshold = 0.8f;
@@ -33,32 +32,31 @@ public class EnemyAI : MonoBehaviour
 
     private void Update()
     {
-        if (_player == null) return;
-        float distance = Vector2.Distance(_player.position, transform.position);
-        if (distance < _chaseDistanceThreshold)
+        if (_playerPosition == null) return;
+
+        _playerPosition = HostileSpawner._playerPosition;
+        float distance = Vector2.Distance(_playerPosition, transform.position);
+        
+        if (distance <= _attackDistanceThreshold)
         {
-            //Debug.Log($"in Range");
-            if (distance <= _attackDistanceThreshold)
+            //Attack
+            if (_passedTime >= _attackDelay)
             {
-                //Attack
-                if (_passedTime >= _attackDelay)
-                {
-                    _passedTime = 0f;
-                    Attack();
-                }
-            }else if (_health._health <= 0)
-            {
-                transform.position = transform.position;
+                _passedTime = 0f;
+                Attack();
             }
-            else
-            {
-                //Chase
-                //Debug.Log($"Chase");
-                Vector3 direction = (_player.position - transform.position).normalized;
-                transform.position += direction * _moveSpeed * Time.deltaTime;
-                //_rb.MovePosition(transform.position += direction * _moveSpeed * Time.deltaTime);
-                //_rb.velocity = direction * _moveSpeed;
-            }
+        }else if (_health._health <= 0)
+        {
+            transform.position = transform.position;
+        }
+        else
+        {
+            //Chase
+            //Debug.Log($"Chase");
+            Vector3 direction = (_playerPosition - transform.position).normalized;
+            transform.position += direction * _moveSpeed * Time.deltaTime;
+            //_rb.MovePosition(transform.position += direction * _moveSpeed * Time.deltaTime);
+            //_rb.velocity = direction * _moveSpeed;
         }
 
         if (_passedTime < _attackDelay)
@@ -90,8 +88,8 @@ public class EnemyAI : MonoBehaviour
 
     private void CheckForFlipping()
     {
-        bool movingLeft = transform.position.x < _player.position.x;
-        bool movingRight = transform.position.x > _player.position.x;
+        bool movingLeft = transform.position.x < _playerPosition.x;
+        bool movingRight = transform.position.x > _playerPosition.x;
 
         if (movingLeft)
         {
