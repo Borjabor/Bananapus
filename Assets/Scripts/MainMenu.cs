@@ -11,7 +11,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private GameObject _firstButton, _controlsFirstbutton, _returnFirstButton;
     
 
-    private void Start() {
+    private void Start()
+    {
+        Time.timeScale = 1f;
         Cursor.visible = false;
     }
 
