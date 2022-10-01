@@ -111577,11 +111577,6 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 258558204804909251, guid: 3f9f5282818bfd249b6c596623d28142, type: 3}
   m_PrefabInstance: {fileID: 804025385442945588}
   m_PrefabAsset: {fileID: 0}
---- !u!212 &1266093879 stripped
-SpriteRenderer:
-  m_CorrespondingSourceObject: {fileID: 4507554360279570612, guid: 3f9f5282818bfd249b6c596623d28142, type: 3}
-  m_PrefabInstance: {fileID: 804025385442945588}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1270784189 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1625007366048262336, guid: 4d1afb456b6513d458209c77285bbe8d, type: 3}
@@ -113071,7 +113066,7 @@ PrefabInstance:
     - target: {fileID: 4578230857303194015, guid: cdac214a3de7812409012d3f782423a9, type: 3}
       propertyPath: _sRenderer
       value: 
-      objectReference: {fileID: 1266093879}
+      objectReference: {fileID: 1897271416}
     - target: {fileID: 4578230857303194015, guid: cdac214a3de7812409012d3f782423a9, type: 3}
       propertyPath: myanimator
       value: 
@@ -113084,6 +113079,10 @@ PrefabInstance:
       propertyPath: _DamageParticles
       value: 
       objectReference: {fileID: 366293205}
+    - target: {fileID: 5973702331206010072, guid: cdac214a3de7812409012d3f782423a9, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa94c6da14ecf4a8690f02549a9ac6a7, type: 3}
     - target: {fileID: 7141854633486017468, guid: cdac214a3de7812409012d3f782423a9, type: 3}
       propertyPath: _player
       value: 
@@ -113114,15 +113113,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8769189946398573879, guid: cdac214a3de7812409012d3f782423a9, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8769189946398573879, guid: cdac214a3de7812409012d3f782423a9, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8769189946398573879, guid: cdac214a3de7812409012d3f782423a9, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 8769189946398573879, guid: cdac214a3de7812409012d3f782423a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -113726,6 +113725,11 @@ PrefabInstance:
 --- !u!1 &1897271410 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7424954908252397400, guid: cdac214a3de7812409012d3f782423a9, type: 3}
+  m_PrefabInstance: {fileID: 1687298372}
+  m_PrefabAsset: {fileID: 0}
+--- !u!212 &1897271416 stripped
+SpriteRenderer:
+  m_CorrespondingSourceObject: {fileID: 5973702331206010072, guid: cdac214a3de7812409012d3f782423a9, type: 3}
   m_PrefabInstance: {fileID: 1687298372}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1904485074
