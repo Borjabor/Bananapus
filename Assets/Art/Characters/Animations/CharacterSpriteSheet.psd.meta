@@ -306,7 +306,49 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSpriteSheet_54
+      name: CharacterSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 1005
+        width: 42
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c645571d8f9db9b44815fb4661a9f16a
+      internalID: 168268246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 874
+        y: 996
+        width: 89
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cdaf756661b974409af7350a4ccb49c
+      internalID: 841783846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CharacterSpriteSheet_11
       rect:
         serializedVersion: 2
         x: 56
@@ -320,14 +362,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 805a48e13652c8c40bebe749bf8ef725
-      internalID: -2055050296
+      spriteID: 99942ffeb48e2144cb162559f907feff
+      internalID: 852982305
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSpriteSheet_55
+      name: CharacterSpriteSheet_12
       rect:
         serializedVersion: 2
         x: 120
@@ -341,14 +383,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d74883387b80e8249b154223d38b33bb
-      internalID: -450540834
+      spriteID: b7301b30a7fc2a146b0e9c024d34b6a0
+      internalID: 1710079565
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSpriteSheet_56
+      name: CharacterSpriteSheet_13
       rect:
         serializedVersion: 2
         x: 216
@@ -362,14 +404,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c0caeab7242730a4e8b80c85f1f9e7bb
-      internalID: -1167931849
+      spriteID: 50f0d47c23c3a484cae87857b0530181
+      internalID: 695977870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSpriteSheet_57
+      name: CharacterSpriteSheet_14
       rect:
         serializedVersion: 2
         x: 274
@@ -383,14 +425,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e091293853fc044f96fe0051b5510a3
-      internalID: 1596422066
+      spriteID: 992cfcdc777431c4eae80441ae22572c
+      internalID: -832854493
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSpriteSheet_58
+      name: CharacterSpriteSheet_15
       rect:
         serializedVersion: 2
         x: 367
@@ -404,14 +446,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48550a072d4f2d944a0495654fca7e73
-      internalID: -50314762
+      spriteID: 3bc0dc42ca9e07641bfb351c00336fff
+      internalID: -176456910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CharacterSpriteSheet_59
+      name: CharacterSpriteSheet_16
       rect:
         serializedVersion: 2
         x: 429
@@ -425,8 +467,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a2e5329f3b415945b68159f91a15465
-      internalID: 546581204
+      spriteID: 4511cfdbc3d766c4b8f6ca118bd596be
+      internalID: 1254511831
       vertices: []
       indices: 
       edges: []
@@ -442,93 +484,23 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CharacterSpriteSheet_61: -1181954932
-      CharacterSpriteSheet_86: 1141173779
-      CharacterSpriteSheet_62: -25416347
-      CharacterSpriteSheet_37: 884280041
-      CharacterSpriteSheet_28: 238824146
-      CharacterSpriteSheet_55: -450540834
-      CharacterSpriteSheet_4: 358209659
-      CharacterSpriteSheet_53: 1871841807
-      CharacterSpriteSheet_85: 1122849913
-      CharacterSpriteSheet_12: 1710079565
-      CharacterSpriteSheet_42: -113483044
-      CharacterSpriteSheet_36: -758317588
-      CharacterSpriteSheet_26: -1016952994
-      CharacterSpriteSheet_7: -143580232
-      CharacterSpriteSheet_73: 1483738411
-      CharacterSpriteSheet_83: 31244569
-      CharacterSpriteSheet_56: -1167931849
-      CharacterSpriteSheet_68: 1325987357
-      CharacterSpriteSheet_15: -176456910
-      CharacterSpriteSheet_80: -577944301
-      CharacterSpriteSheet_8: -142429635
-      CharacterSpriteSheet_81: 884810508
-      CharacterSpriteSheet_0: -904960041
-      CharacterSpriteSheet_69: 1233996059
-      CharacterSpriteSheet_54: -2055050296
-      CharacterSpriteSheet_35: -1186764270
       CharacterSpriteSheet_6: -160897653
+      CharacterSpriteSheet_4: 358209659
       CharacterSpriteSheet_1: -148984442
-      CharacterSpriteSheet_44: 1382328807
-      CharacterSpriteSheet_3: 1788337825
-      CharacterSpriteSheet_60: -288592596
-      CharacterSpriteSheet_41: -1118280329
-      CharacterSpriteSheet_71: 1602124307
-      CharacterSpriteSheet_21: 625858140
-      CharacterSpriteSheet_59: 546581204
-      CharacterSpriteSheet_25: -1801340157
-      CharacterSpriteSheet_32: 508499304
-      CharacterSpriteSheet_31: 1940579623
-      CharacterSpriteSheet_84: 310345027
-      CharacterSpriteSheet_74: -1612792433
-      CharacterSpriteSheet_24: 1808819043
-      CharacterSpriteSheet_46: -186736957
-      CharacterSpriteSheet_76: -1523789632
-      CharacterSpriteSheet_2: 1757668638
-      CharacterSpriteSheet_27: -2045429211
-      CharacterSpriteSheet_47: 522909150
-      CharacterSpriteSheet_78: -1426292338
-      CharacterSpriteSheet_48: 481693356
-      CharacterSpriteSheet_64: 996145213
-      CharacterSpriteSheet_79: -1317791740
-      CharacterSpriteSheet_82: 1404107475
-      CharacterSpriteSheet_65: -1182070601
-      CharacterSpriteSheet_39: 314039812
-      CharacterSpriteSheet_34: 781400983
-      CharacterSpriteSheet_67: -1362987544
-      CharacterSpriteSheet_72: 1853130984
       CharacterSpriteSheet_5: -1536258688
-      CharacterSpriteSheet_11: 852982305
-      CharacterSpriteSheet_13: 695977870
-      CharacterSpriteSheet_23: -1972952244
-      CharacterSpriteSheet_19: -446069257
-      CharacterSpriteSheet_17: -1200150913
-      CharacterSpriteSheet_52: 878986660
-      CharacterSpriteSheet_20: 1995145764
-      CharacterSpriteSheet_30: -834542574
-      CharacterSpriteSheet_16: 1254511831
-      CharacterSpriteSheet_70: -524273959
-      CharacterSpriteSheet_77: 733157672
-      CharacterSpriteSheet_51: 385037731
-      CharacterSpriteSheet_49: -407110224
-      CharacterSpriteSheet_29: 529321823
-      CharacterSpriteSheet_40: 699249136
-      CharacterSpriteSheet_58: -50314762
-      CharacterSpriteSheet_38: 1254367206
-      CharacterSpriteSheet_22: -419869390
       CharacterSpriteSheet_9: 168268246
+      CharacterSpriteSheet_11: 852982305
+      CharacterSpriteSheet_3: 1788337825
+      CharacterSpriteSheet_12: 1710079565
+      CharacterSpriteSheet_13: 695977870
       CharacterSpriteSheet_14: -832854493
-      CharacterSpriteSheet_63: 647083520
-      CharacterSpriteSheet_45: 1781733688
-      CharacterSpriteSheet_43: -213824423
-      CharacterSpriteSheet_18: 1385733132
-      CharacterSpriteSheet_75: -1003862451
+      CharacterSpriteSheet_7: -143580232
+      CharacterSpriteSheet_15: -176456910
       CharacterSpriteSheet_10: 841783846
-      CharacterSpriteSheet_57: 1596422066
-      CharacterSpriteSheet_33: -636872587
-      CharacterSpriteSheet_66: -1418440179
-      CharacterSpriteSheet_50: -1407079511
+      CharacterSpriteSheet_8: -142429635
+      CharacterSpriteSheet_0: -904960041
+      CharacterSpriteSheet_2: 1757668638
+      CharacterSpriteSheet_16: 1254511831
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 1
