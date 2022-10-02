@@ -10,7 +10,12 @@ public class EnemyDeathCount : MonoBehaviour
     private int _killGoal = 100;
     [SerializeField] 
     private GameObject _winMessage;
-    
+
+    private void Start()
+    {
+        KillCount = 0;
+    }
+
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Alpha1)) KillCount++;

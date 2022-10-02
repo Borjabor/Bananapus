@@ -152,6 +152,7 @@ public class Health : MonoBehaviour
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
+        EnemyDeathCount.KillCount++;
         if (Random.value < (_dropChance * 0.1f))
         {
             Instantiate(_droppedLoot, transform.position, Quaternion.identity);
