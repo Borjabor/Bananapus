@@ -16,8 +16,6 @@ public class EnemyAI : MonoBehaviour
     [SerializeField]
     private float _moveSpeed = 1f;
     
-    [SerializeField] private Animator _strawbatAnimator;
-
     [SerializeField]
     private GameObject _attackArea;
     private bool _attacking;
@@ -26,7 +24,10 @@ public class EnemyAI : MonoBehaviour
     private Health _health;
     private Rigidbody2D _rb;
 
-    
+    [SerializeField]
+    private Animator _strawbatAnimator;
+
+
     private void Awake()
     {
         _health = GetComponent<Health>();
@@ -87,7 +88,6 @@ public class EnemyAI : MonoBehaviour
     {
         _attacking = true;
         _attackArea.SetActive(_attacking);
-        _strawbatAnimator.SetTrigger("Attack");
     }
 
     private void CheckForFlipping()
