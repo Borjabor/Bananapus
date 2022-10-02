@@ -116,6 +116,7 @@ public class PlayerAttack : MonoBehaviour
             _hasAttacked = true;
         }else if (combo == 3)
         {
+            _animator.SetTrigger("Attack3");
             _Attack3.Play();
             _attackArea03.SetActive(_attacking);
             yield return new WaitForSeconds(_timeToAttack);

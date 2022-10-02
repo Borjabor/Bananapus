@@ -33,6 +33,8 @@ public class Health : MonoBehaviour
     private ParticleSystem _DamageParticles;
 
     public Animator myanimator;
+    
+    [SerializeField] private Animator _strawbatAnimator;
 
     private void Awake()
     {
@@ -79,6 +81,7 @@ public class Health : MonoBehaviour
         if(_health <= 0)
         {
             Die();
+            _strawbatAnimator.SetTrigger("Die");
         }
     }
 

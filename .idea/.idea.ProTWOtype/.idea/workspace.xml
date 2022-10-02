@@ -5,9 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dac63898-ec31-46d9-8c37-65ce7a821b0e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ProTWOtype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProTWOtype/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Animations/Player_Attack_2.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Animations/Player_Attack_2.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Banana/Animations/BananaWalk_0.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Banana/Animations/BananaWalk_0.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Banana/BananaMelee2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Banana/BananaMelee2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Banana/BananaMelee3.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Banana/BananaMelee3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Banana/BananaMelee3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Banana/BananaMelee3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/StrawbatAttack.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/StrawbatAttack.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/StrawbatDeath.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/StrawbatDeath.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/StrawbatWalk.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/StrawbatWalk.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefab/EnemyBase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/EnemyBase.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyAI.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +105,7 @@
       <workItem from="1664224074721" duration="28664000" />
       <workItem from="1664665385982" duration="1782000" />
       <workItem from="1664735783035" duration="336000" />
+      <workItem from="1664746015794" duration="1428000" />
     </task>
     <servers />
   </component>
