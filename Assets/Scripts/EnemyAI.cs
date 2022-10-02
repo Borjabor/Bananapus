@@ -76,7 +76,6 @@ public class EnemyAI : MonoBehaviour
                 _timer = 0;
                 _attacking = false;
                 _attackArea.SetActive(_attacking);
-
             }
 
         }
