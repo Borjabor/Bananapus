@@ -15,6 +15,8 @@ public class EnemyAI : MonoBehaviour
     private float _passedTime = 1f;
     [SerializeField]
     private float _moveSpeed = 1f;
+    
+    [SerializeField] private Animator _strawbatAnimator;
 
     [SerializeField]
     private GameObject _attackArea;
@@ -85,6 +87,7 @@ public class EnemyAI : MonoBehaviour
     {
         _attacking = true;
         _attackArea.SetActive(_attacking);
+        _strawbatAnimator.SetTrigger("Attack");
     }
 
     private void CheckForFlipping()

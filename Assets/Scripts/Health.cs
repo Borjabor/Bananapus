@@ -33,6 +33,8 @@ public class Health : MonoBehaviour
     private ParticleSystem _DamageParticles;
 
     public Animator myanimator;
+    
+    [SerializeField] private Animator _strawbatAnimator;
 
     private void Awake()
     {
