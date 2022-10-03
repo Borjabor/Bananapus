@@ -174,6 +174,7 @@ MonoBehaviour:
   _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
   _DamageParticles: {fileID: 0}
   myanimator: {fileID: -7376644037900365142}
+  _strawbatAnimator: {fileID: 526620918329341459}
 --- !u!114 &2646001990712214232
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -191,6 +192,7 @@ MonoBehaviour:
   _attackDelay: 1
   _moveSpeed: 1.4
   _attackArea: {fileID: 2646001991092948081}
+  _strawbatAnimator: {fileID: 526620918329341459}
 --- !u!114 &2646001990712214233
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -215,7 +217,7 @@ Animator:
   m_GameObject: {fileID: 2646001990712214238}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b0eae7c47f11f7641916b8db96346d65, type: 2}
+  m_Controller: {fileID: 9100000, guid: 44f6dae013aca3a43ac99f6cbc41b9a4, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -300,6 +302,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _damage: 10
+  _strawbatAnimator: {fileID: -7376644037900365142}
 --- !u!1 &2646001992253394351
 GameObject:
   m_ObjectHideFlags: 0
