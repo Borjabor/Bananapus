@@ -6,21 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="dac63898-ec31-46d9-8c37-65ce7a821b0e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ProTWOtype/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ProTWOtype/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Banana/Animations/Player_Attack_3.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Banana/Animations/Player_Attack_3.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/Animation/Strawbat_Animator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/Animation/Strawbat_Animator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/Animation/Strawbat_Death.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/Animation/Strawbat_Death.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/Animation/Strawbat_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Strawbat/Animation/Strawbat_Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/Animations/WizvocadoAnimator.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/Animations/WizvocadoAnimator.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/Animations/Wizvocado_Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/Animations/Wizvocado_Idle.anim" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/WizvocadoSeed.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/WizvocadoSeed.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/WizvocadoSeed.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Art/Characters/Wizvocado/WizvocadoSeed.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Avocado.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Avocado.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/EnemyBase.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/EnemyBase.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefab/Projectile.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefab/Projectile.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/GridTest.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GridTest.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Health.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Health.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HostileSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HostileSpawner.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/RangedEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/RangedEnemy.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -114,6 +104,7 @@
       <workItem from="1664774677691" duration="241000" />
       <workItem from="1664775349162" duration="3427000" />
       <workItem from="1664778989634" duration="1453000" />
+      <workItem from="1664781040260" duration="843000" />
     </task>
     <servers />
   </component>

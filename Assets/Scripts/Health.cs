@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
 
     public Animator myanimator;
     
-    //[SerializeField] private Animator _animator;
+    [SerializeField] private Animator _animator;
 
     private void Awake()
     {
@@ -139,13 +139,13 @@ public class Health : MonoBehaviour
         transform.position = _checkpoint;
         myanimator.SetBool("IsDead", false);
         _sRenderer.enabled = true;
+        _health = MaxHealth;
         HealthBar.SetHealth(_health);
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
-        _health = MaxHealth;
     }
 
     private IEnumerator Destroy()
