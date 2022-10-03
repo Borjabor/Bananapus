@@ -63,6 +63,7 @@ MonoBehaviour:
   _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
   _DamageParticles: {fileID: 390809468192896980}
   myanimator: {fileID: 1307453767}
+  _animator: {fileID: 0}
 --- !u!50 &1625007366048262342
 Rigidbody2D:
   serializedVersion: 4
@@ -125,7 +126,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300476, guid: 95d22684aba5646d79a26b3287a692b6, type: 3}
+  m_Sprite: {fileID: 1728240512, guid: eb04c998d313e1a46bcbfefeaebb417c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

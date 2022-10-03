@@ -32,7 +32,7 @@ Transform:
   m_GameObject: {fileID: 1625007366048262341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.58327, y: -0.040786058, z: 0.090908386}
-  m_LocalScale: {x: 0.67466456, y: 0.67466456, z: 0.67466456}
+  m_LocalScale: {x: 0.8237654, y: 0.8237654, z: 0.8237654}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9199664590388291583}
@@ -63,6 +63,7 @@ MonoBehaviour:
   _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
   _DamageParticles: {fileID: 41995027579885741}
   myanimator: {fileID: 1307453767}
+  _animator: {fileID: 0}
 --- !u!50 &1625007366048262342
 Rigidbody2D:
   serializedVersion: 4
@@ -125,7 +126,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: dbc624f7b3a644dcf989e434e63d9a98, type: 3}
+  m_Sprite: {fileID: -2083388561, guid: eb04c998d313e1a46bcbfefeaebb417c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
