@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7404324648647926354}
   - component: {fileID: 2611162156690741929}
+  - component: {fileID: 1852831183}
   m_Layer: 0
   m_Name: HealthPickup
   m_TagString: Untagged
@@ -26,8 +27,8 @@ Transform:
   m_GameObject: {fileID: 2229225710574225125}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.03, y: 0.038, z: 0}
-  m_LocalScale: {x: 2.5408187, y: 1.579428, z: 1.4609709}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.85, y: 1.7716216, z: 1.6387501}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8578338296261166384}
   m_RootOrder: 0
@@ -84,6 +85,26 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!95 &1852831183
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2229225710574225125}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a669e7f79637b174db6ae1726f30bcb6, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &7358707285869751435
 GameObject:
   m_ObjectHideFlags: 0
