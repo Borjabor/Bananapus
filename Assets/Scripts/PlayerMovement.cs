@@ -29,6 +29,9 @@ public class PlayerMovement : MonoBehaviour
     private bool _reset;
     public bool _isRespawning = false;
 
+    [SerializeField]
+    private AudioSource _DashAudio;
+
 
     // Start is called before the first frame update
     void Start()
@@ -58,6 +61,7 @@ public class PlayerMovement : MonoBehaviour
         _rb.velocity = _moveDir * _moveSpeed;
         if (_isDashing)
         {
+            _DashAudio.Play();
             Vector2 dashPosition = transform.position + _moveDir * _dashAmount;
             RaycastHit2D hit = Physics2D.Raycast(transform.position, _moveDir, _dashAmount, _dashLayerMask);
             if (hit.collider != null)
