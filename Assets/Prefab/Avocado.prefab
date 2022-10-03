@@ -4893,8 +4893,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: bd3cb4af8406d4436a2ae8c2aafe1f8d, type: 3}
-  m_Color: {r: 0.46624047, g: 0.21444462, b: 0.745283, a: 1}
+  m_Sprite: {fileID: -1060756240, guid: 02a523fe2b20a9341a64419f228b8ec4, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -4960,6 +4960,7 @@ MonoBehaviour:
   _amountToSpawn: 999
   _distanceThreshold: 7
   _moveSpeed: 0
+  _avocadoAnimator: {fileID: 1897271418}
 --- !u!114 &4578230857303194015
 MonoBehaviour:
   m_ObjectHideFlags: 0

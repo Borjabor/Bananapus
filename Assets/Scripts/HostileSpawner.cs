@@ -16,7 +16,8 @@ public class HostileSpawner : MonoBehaviour
     protected float _spawnDistanceThreshold;
     [SerializeField] 
     private int _amountToSpawn;
-    
+    [SerializeField] private Animator _avocadoAnimator;
+
 
 
     void Update()
@@ -33,6 +34,10 @@ public class HostileSpawner : MonoBehaviour
         {
             if (_timer >= _timeBetweenSpawns)
             {
+                if (gameObject.tag == "Enemy")
+                {
+                    _avocadoAnimator.SetTrigger("RangedAttack");
+                }
                 Instantiate(_spawnedEntity, transform.position, Quaternion.identity);
                 _amountToSpawn--;
                 _timer = 0f;

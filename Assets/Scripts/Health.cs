@@ -34,7 +34,7 @@ public class Health : MonoBehaviour
 
     public Animator myanimator;
     
-    [SerializeField] private Animator _strawbatAnimator;
+    //[SerializeField] private Animator _animator;
 
     private void Awake()
     {
@@ -150,6 +150,7 @@ public class Health : MonoBehaviour
 
     private IEnumerator Destroy()
     {
+        //_animator.SetTrigger("Die");
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
@@ -160,6 +161,7 @@ public class Health : MonoBehaviour
         {
             Instantiate(_droppedLoot, transform.position, Quaternion.identity);
         }
+        Debug.Log("Why not?");
         Destroy(gameObject);
     }
 }
