@@ -4830,7 +4830,7 @@ GameObject:
   - component: {fileID: 1897271418}
   - component: {fileID: 1925566239}
   m_Layer: 0
-  m_Name: RangedEnemy
+  m_Name: Avocado
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4984,6 +4984,7 @@ MonoBehaviour:
   _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
   _DamageParticles: {fileID: 1878155347387293445}
   myanimator: {fileID: 1897271418}
+  _strawbatAnimator: {fileID: 1897271418}
 --- !u!114 &5325002618788629416
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5008,7 +5009,7 @@ Animator:
   m_GameObject: {fileID: 7424954908252397400}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: b0eae7c47f11f7641916b8db96346d65, type: 2}
+  m_Controller: {fileID: 9100000, guid: 263825cea2e6f4848a57bebb3af11e36, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
