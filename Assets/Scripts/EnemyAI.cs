@@ -41,7 +41,7 @@ public class EnemyAI : MonoBehaviour
         _playerPosition = HostileSpawner._playerPosition;
         float distance = Vector2.Distance(_playerPosition, transform.position);
         
-        if (distance <= _attackDistanceThreshold)
+        if (distance <= _attackDistanceThreshold && _health._health > 0)
         {
             //Attack
             if (_passedTime >= _attackDelay)
