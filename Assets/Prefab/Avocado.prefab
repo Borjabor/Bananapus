@@ -4985,7 +4985,7 @@ MonoBehaviour:
   _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
   _DamageParticles: {fileID: 1878155347387293445}
   myanimator: {fileID: 1897271418}
-  _animator: {fileID: 0}
+  _animator: {fileID: 1897271418}
 --- !u!114 &5325002618788629416
 MonoBehaviour:
   m_ObjectHideFlags: 0
