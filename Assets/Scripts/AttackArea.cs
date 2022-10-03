@@ -16,7 +16,7 @@ public class AttackArea : MonoBehaviour
             Health health = collider.GetComponent<Health>();
             //Debug.Log($"hit");
             health.Damage(_damage);
-            _strawbatAnimator.SetTrigger("Attack");
+            //_strawbatAnimator.SetTrigger("Attack");
 
         }
     }

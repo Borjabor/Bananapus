@@ -4958,9 +4958,9 @@ MonoBehaviour:
   _player: {fileID: 0}
   _spawnDistanceThreshold: 15
   _amountToSpawn: 999
+  _avocadoAnimator: {fileID: 1897271418}
   _distanceThreshold: 7
   _moveSpeed: 0
-  _avocadoAnimator: {fileID: 1897271418}
 --- !u!114 &4578230857303194015
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4985,7 +4985,7 @@ MonoBehaviour:
   _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
   _DamageParticles: {fileID: 1878155347387293445}
   myanimator: {fileID: 1897271418}
-  _strawbatAnimator: {fileID: 1897271418}
+  _animator: {fileID: 1897271418}
 --- !u!114 &5325002618788629416
 MonoBehaviour:
   m_ObjectHideFlags: 0
