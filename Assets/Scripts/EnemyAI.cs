@@ -87,6 +87,7 @@ public class EnemyAI : MonoBehaviour
     private void Attack()
     {
         _attacking = true;
+        _strawbatAnimator.SetTrigger("Attack");
         _attackArea.SetActive(_attacking);
     }
 

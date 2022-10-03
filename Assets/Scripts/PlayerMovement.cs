@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private float _timeOfFirstButton;
     private bool _reset;
     public bool _isRespawning = false;
+    private Health _health;
 
     [SerializeField]
     private AudioSource _DashAudio;
@@ -40,12 +41,17 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         _rb = GetComponent<Rigidbody2D>();
+        _health = gameObject.GetComponent<Health>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        GetInputs();
+        if (_health._health > 0)
+        {
+            GetInputs();
+        }
+        
         _moveDir = new Vector3(_moveX, _moveY).normalized;
         
         _animator.SetFloat("Horizontal", _moveX);

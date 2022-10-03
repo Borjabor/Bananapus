@@ -50,9 +50,9 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     /*void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            // Damage(10);
+            Damage(10);
         }
 
         if (Input.GetKeyDown(KeyCode.H))
@@ -136,8 +136,9 @@ public class Health : MonoBehaviour
         myanimator.SetBool("IsDead", true);
         yield return new WaitForSeconds(1.5f);
         _sRenderer.enabled = false;
-        transform.position = _checkpoint;
         myanimator.SetBool("IsDead", false);
+        yield return new WaitForSeconds(0.2f);
+        transform.position = _checkpoint;
         _sRenderer.enabled = true;
         _health = MaxHealth;
         HealthBar.SetHealth(_health);
@@ -150,21 +151,22 @@ public class Health : MonoBehaviour
 
     private IEnumerator Destroy()
     {
-        //_animator.SetTrigger("Die");
-        _flash.Flash();
-        yield return new WaitForSeconds(0.2f);
-        _flash.Flash();
-        yield return new WaitForSeconds(0.2f);
-        _flash.Flash();
         if (gameObject.tag == "Enemy")
         {
+            _animator.SetTrigger("Die");
             EnemyDeathCount.KillCount++;
         }
+        _flash.Flash();
+        yield return new WaitForSeconds(0.2f);
+        _flash.Flash();
+        yield return new WaitForSeconds(0.2f);
+        _flash.Flash();
+        yield return new WaitForSeconds(0.2f);
         if (Random.value < (_dropChance * 0.1f))
         {
             Instantiate(_droppedLoot, transform.position, Quaternion.identity);
         }
-        Debug.Log("Why not?");
+        //Debug.Log("Why not?");
         Destroy(gameObject);
     }
 }
