@@ -53,7 +53,6 @@ public class RangedEnemy : HostileSpawner
         }
         
         Spawn();
-        
         CheckForFlipping();
     }
 

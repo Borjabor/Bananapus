@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     private AudioSource _audioSource;
     [SerializeField] 
-    private AudioClip _deathAudio;
+    private AudioSource _deathAudio;
     [SerializeField]
     private AudioSource _damageAudio;
     [SerializeField]
@@ -33,6 +33,8 @@ public class Health : MonoBehaviour
     private ParticleSystem _DamageParticles;
 
     public Animator myanimator;
+    
+    //[SerializeField] private Animator _animator;
 
     private void Awake()
     {
@@ -130,6 +132,7 @@ public class Health : MonoBehaviour
     private IEnumerator Respawn()
     {
         //_audioSource.PlayOneShot(_deathAudio);
+        _deathAudio.Play();
         myanimator.SetBool("IsDead", true);
         yield return new WaitForSeconds(1.5f);
         _sRenderer.enabled = false;
@@ -147,15 +150,18 @@ public class Health : MonoBehaviour
 
     private IEnumerator Destroy()
     {
+        //_animator.SetTrigger("Die");
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
         yield return new WaitForSeconds(0.2f);
         _flash.Flash();
+        EnemyDeathCount.KillCount++;
         if (Random.value < (_dropChance * 0.1f))
         {
             Instantiate(_droppedLoot, transform.position, Quaternion.identity);
         }
+        Debug.Log("Why not?");
         Destroy(gameObject);
     }
 }

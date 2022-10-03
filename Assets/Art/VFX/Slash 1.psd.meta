@@ -155,7 +155,7 @@ TextureImporter:
         width: 17
         height: 17
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -176,7 +176,7 @@ TextureImporter:
         width: 11
         height: 11
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -197,7 +197,7 @@ TextureImporter:
         width: 7
         height: 7
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -205,6 +205,48 @@ TextureImporter:
       bones: []
       spriteID: 5c2cbb6ab5e0e2d4085ddf6fd7a490d9
       internalID: 462797335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash 1_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 893
+        width: 40
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15dced4a749e2241b4ba02c3fb38723
+      internalID: 1370770966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Slash 1_6
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 890
+        width: 77
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34612c2398350534787b5ddfebb49f4a
+      internalID: -203192605
       vertices: []
       indices: 
       edges: []
@@ -222,6 +264,8 @@ TextureImporter:
     nameFileIdTable:
       Slash 1_1: 1939488119
       Slash 1_4: 462797335
+      Slash 1_6: -203192605
+      Slash 1_5: 1370770966
       Slash 1_3: -629472988
       Slash 1_0: 1501815661
       Slash 1_2: 2092071655

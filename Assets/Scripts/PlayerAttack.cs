@@ -106,6 +106,7 @@ public class PlayerAttack : MonoBehaviour
             _hasAttacked = true;
         }else if(combo ==2)
         {
+            _animator.SetTrigger("Attack2");
             _Attack2.Play();
             _attackArea02.SetActive(_attacking);
             yield return new WaitForSeconds(_timeToAttack);
@@ -115,6 +116,7 @@ public class PlayerAttack : MonoBehaviour
             _hasAttacked = true;
         }else if (combo == 3)
         {
+            _animator.SetTrigger("Attack3");
             _Attack3.Play();
             _attackArea03.SetActive(_attacking);
             yield return new WaitForSeconds(_timeToAttack);
