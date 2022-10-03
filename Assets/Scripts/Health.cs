@@ -19,7 +19,7 @@ public class Health : MonoBehaviour
     [SerializeField]
     private AudioSource _audioSource;
     [SerializeField] 
-    private AudioClip _deathAudio;
+    private AudioSource _deathAudio;
     [SerializeField]
     private AudioSource _damageAudio;
     [SerializeField]
@@ -132,6 +132,7 @@ public class Health : MonoBehaviour
     private IEnumerator Respawn()
     {
         //_audioSource.PlayOneShot(_deathAudio);
+        _deathAudio.Play();
         myanimator.SetBool("IsDead", true);
         yield return new WaitForSeconds(1.5f);
         _sRenderer.enabled = false;
