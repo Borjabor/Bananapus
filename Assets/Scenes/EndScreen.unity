@@ -346,11 +346,11 @@ RectTransform:
   m_Father: {fileID: 64857794}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 397.92093, y: 206.63147}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -278.9889, y: 206.63147}
   m_SizeDelta: {x: 566.1804, y: 42.8867}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &821506653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -481,11 +481,11 @@ RectTransform:
   m_Father: {fileID: 64857794}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 478.757, y: -22}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -117.31677, y: -22}
   m_SizeDelta: {x: 727.8524, y: 42.8867}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1076349688
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -769,11 +769,11 @@ RectTransform:
   m_Father: {fileID: 64857794}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 371.21, y: 141}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -332.41077, y: 141}
   m_SizeDelta: {x: 512.7584, y: 42.8867}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &1855787418
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -904,11 +904,11 @@ RectTransform:
   m_Father: {fileID: 64857794}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 260, y: 311}
-  m_SizeDelta: {x: 290.3324, y: 60.0369}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -278.99, y: 311}
+  m_SizeDelta: {x: 566.18, y: 60.0369}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2042047139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: You win!
+  m_text: Thou hast ascended.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d12da6823f1d5d24ca848d238e542501, type: 2}
   m_sharedMaterial: {fileID: -7370186882054237320, guid: d12da6823f1d5d24ca848d238e542501, type: 2}
@@ -1039,11 +1039,11 @@ RectTransform:
   m_Father: {fileID: 64857794}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 478.757, y: 44}
+  m_AnchorMin: {x: 1, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: -117.31677, y: 44}
   m_SizeDelta: {x: 727.8524, y: 42.8867}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &2098212164
 MonoBehaviour:
   m_ObjectHideFlags: 0
