@@ -11,13 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 79fbf1b335dcba040864b2332321bdee
-  - enabled: 0
-    path: Assets/Scenes/Test_Scene.unity
-    guid: 4cc694d6587b4b4469db4cc1e2101b37
-  - enabled: 1
-    path: Assets/Scenes/EndScreen.unity
-    guid: 65975565c15e0604abb2690bd0344eb5
   - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: 24fc267f01cd1ad44a3ee6b01cfa1b35
+  - enabled: 1
+    path: Assets/Scenes/EndScreen.unity
+    guid: 65975565c15e0604abb2690bd0344eb5
+  - enabled: 0
+    path: Assets/Scenes/Test_Scene.unity
+    guid: 4cc694d6587b4b4469db4cc1e2101b37
   m_configObjects: {}
