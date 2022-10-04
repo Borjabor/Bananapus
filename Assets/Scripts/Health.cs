@@ -14,6 +14,7 @@ public class Health : MonoBehaviour
     public int MaxHealth;
     [SerializeField] private SimpleFlash _flash;
     public HealthBar HealthBar;
+    private bool _isDying = false;
 
     private Vector3 _checkpoint;
     [SerializeField]
@@ -78,7 +79,7 @@ public class Health : MonoBehaviour
             HealthBar.SetHealth(_health);
         }
 
-        if(_health <= 0)
+        if(_health <= 0 && !_isDying)
         {
             Die();
         }
@@ -113,6 +114,7 @@ public class Health : MonoBehaviour
         //Debug.Log("I am Dead!");
         if (gameObject.tag != "Player")
         {
+            _isDying = true;
             StartCoroutine(Destroy());
         }
         else
