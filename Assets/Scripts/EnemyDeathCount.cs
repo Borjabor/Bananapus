@@ -10,6 +10,8 @@ public class EnemyDeathCount : MonoBehaviour
     private int _killGoal = 100;
     [SerializeField] 
     private GameObject _winMessage;
+    [SerializeField]
+    private float _endDelay = 4f;
 
     private void Start()
     {
@@ -23,13 +25,15 @@ public class EnemyDeathCount : MonoBehaviour
         {
             StartCoroutine(Victory());
         }
+
+        //if (Input.GetKeyDown(KeyCode.Alpha2)) KillCount += 10;
     }
 
     private IEnumerator Victory()
     {
         Time.timeScale = 0f;
         _winMessage.SetActive(true);
-        yield return StartCoroutine(WaitForRealSeconds(4f));
+        yield return StartCoroutine(WaitForRealSeconds(_endDelay));
         SceneManager.LoadScene("EndScreen");
 
     }
