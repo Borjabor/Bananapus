@@ -15,6 +15,7 @@ public class MainMenu : MonoBehaviour
     {
         Time.timeScale = 1f;
         Cursor.visible = false;
+        _controlScreen.SetActive(false);
     }
 
     public void StartGame() {
