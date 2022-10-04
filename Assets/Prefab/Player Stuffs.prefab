@@ -4928,7 +4928,7 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.11
+      scalar: 0.2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4981,7 +4981,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1.53
+      scalar: 2
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -5033,23 +5033,23 @@ ParticleSystem:
         m_RotationOrder: 4
     startColor:
       serializedVersion: 2
-      minMaxState: 0
-      minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0, g: 0.51418245, b: 0.99215686, a: 1}
+      minMaxState: 1
+      minColor: {r: 0.8352942, g: 0, b: 0.36078432, a: 1}
+      maxColor: {r: 0.9960785, g: 0.89019614, b: 0.003921569, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 1, b: 1, a: 1}
-        key2: {r: 0, g: 0, b: 0, a: 0}
-        key3: {r: 0, g: 0, b: 0, a: 0}
+        key0: {r: 0.29803923, g: 0.015686275, b: 0.33333334, a: 1}
+        key1: {r: 0.5568628, g: 0.098039225, b: 0.33333334, a: 1}
+        key2: {r: 0.9921569, g: 0, b: 0.36078432, a: 0}
+        key3: {r: 0.9960785, g: 0.89019614, b: 0.003921569, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
         key5: {r: 0, g: 0, b: 0, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 65535
-        ctime2: 0
-        ctime3: 0
+        ctime1: 6746
+        ctime2: 14456
+        ctime3: 41441
         ctime4: 0
         ctime5: 0
         ctime6: 0
@@ -5063,7 +5063,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 2
+        m_NumColorKeys: 4
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -5097,7 +5097,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.42
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -5420,7 +5420,7 @@ ParticleSystem:
     gravityModifier:
       serializedVersion: 2
       minMaxState: 0
-      scalar: -3.03
+      scalar: 0
       minScalar: 0
       maxCurve:
         serializedVersion: 2
@@ -5679,7 +5679,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 10.08
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6167,7 +6167,7 @@ ParticleSystem:
         m_RotationOrder: 4
     separateAxes: 0
   ColorModule:
-    enabled: 1
+    enabled: 0
     gradient:
       serializedVersion: 2
       minMaxState: 1
@@ -6192,7 +6192,7 @@ ParticleSystem:
         ctime6: 0
         ctime7: 0
         atime0: 0
-        atime1: 65535
+        atime1: 20239
         atime2: 0
         atime3: 0
         atime4: 0
@@ -6233,7 +6233,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
   UVModule:
     serializedVersion: 2
-    enabled: 1
+    enabled: 0
     mode: 1
     timeMode: 0
     fps: 30
@@ -9631,7 +9631,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -9707,7 +9707,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843951369403570839}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.47, y: -46, z: -20.268055}
+  m_LocalPosition: {x: -33.46, y: 8.99, z: -20.268055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9782,7 +9782,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1843951369475107841}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.47, y: -46, z: -20.268055}
+  m_LocalPosition: {x: -33.46, y: 8.99, z: -20.268055}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9919,7 +9919,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 589cc9ecf10d5da4fb9a04103222698e, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.054
+  m_Volume: 0.145
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -10136,6 +10136,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1370770966, guid: 072c3ba0a38c05140a31f9be84dd576c, type: 3}
+    - target: {fileID: 2907646102884465424, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 2907646102884465427, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10208,6 +10212,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2907646103094334156, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
+      propertyPath: m_Mass
+      value: 999
+      objectReference: {fileID: 0}
     - target: {fileID: 2907646103094334157, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
       propertyPath: _DashAudio
       value: 
@@ -10222,11 +10230,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2907646103094334159, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.47
+      value: -33.46
       objectReference: {fileID: 0}
     - target: {fileID: 2907646103094334159, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -46
+      value: 8.99
       objectReference: {fileID: 0}
     - target: {fileID: 2907646103094334159, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -10268,6 +10276,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -203192605, guid: 072c3ba0a38c05140a31f9be84dd576c, type: 3}
+    - target: {fileID: 2907646104066451274, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 2907646104066451381, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -10288,6 +10300,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 1501815661, guid: 072c3ba0a38c05140a31f9be84dd576c, type: 3}
+    - target: {fileID: 2907646104183699656, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
+      propertyPath: m_SortingOrder
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5db5446a34c1c8441bd9a90825248a1d, type: 3}
 --- !u!95 &2962178630417088678 stripped
@@ -10507,7 +10523,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 9beaa724b220cc4499735c3af747b741, type: 3}
+  m_audioClip: {fileID: 8300000, guid: eb147e6f614d8d646a52eb8703374dcf, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 0.125
   m_Pitch: 1
