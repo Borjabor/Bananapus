@@ -70,7 +70,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 1
     textureFormat: -1
-    textureCompression: 2
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2511,15 +2511,13 @@ TextureImporter:
       Tileset_111: 327987330
       Tileset_54: 1491879092
       Tileset_22: 1791313611
-      Tileset_34: -726807951
-      Tileset_0: -551108317
-      Tileset_41: -844356005
       Tileset_101: -2112257860
+      Tileset_34: -726807951
+      Tileset_41: -844356005
+      Tileset_0: -551108317
       Tileset_88: -1515476719
       Tileset_12: 1148244750
-      Tileset_104: 2045375465
       Tileset_90: 34570975
-      Tileset_61: 1237483331
       Tileset_71: 2014334379
       Tileset_77: 1891974494
       Tileset_28: -2043763317
@@ -2565,11 +2563,10 @@ TextureImporter:
       Tileset_48: -2079410736
       Tileset_15: -396104765
       Tileset_20: 295502783
-      Tileset_73: 1332647368
       Tileset_91: 560026107
       Tileset_51: 1657423172
       Tileset_32: -668922334
-      Tileset_76: -1409693367
+      Tileset_73: 1332647368
       Tileset_9: 1117077765
       Tileset_39: 1396698563
       Tileset_42: 291508886
@@ -2578,6 +2575,7 @@ TextureImporter:
       Tileset_64: 827822133
       Tileset_4: -525950287
       Tileset_57: -68056208
+      Tileset_76: -1409693367
       Tileset_99: -1503239785
       Tileset_80: -967640738
       Tileset_37: -885986861
