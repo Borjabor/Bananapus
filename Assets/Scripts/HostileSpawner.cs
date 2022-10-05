@@ -8,9 +8,9 @@ public class HostileSpawner : MonoBehaviour
     private float _timeBetweenSpawns = 2f;
     private float _timer;
     [SerializeField] 
-    private GameObject _spawnedEntity;
+    protected GameObject _spawnedEntity;
     [SerializeField] 
-    private Transform _player;
+    protected Transform _player;
     public static Vector3 _playerPosition;
     [SerializeField]
     protected float _spawnDistanceThreshold;
@@ -25,8 +25,9 @@ public class HostileSpawner : MonoBehaviour
         Spawn();
     }
 
-    protected void Spawn()
+    public virtual void Spawn()
     {
+        Debug.Log($"spawn");
         _playerPosition = _player.position;
         _timer += Time.deltaTime;
         float distance = Vector2.Distance(_player.position, transform.position);

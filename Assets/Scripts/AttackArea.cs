@@ -19,5 +19,12 @@ public class AttackArea : MonoBehaviour
             //_strawbatAnimator.SetTrigger("Attack");
 
         }
+        if(collider.GetComponent<GrapeHeart>() != null)
+        {
+            GrapeHeart boss = collider.GetComponent<GrapeHeart>();
+            //Debug.Log($"hit");
+            boss.Spawn();
+
+        }
     }
 }

@@ -169,6 +169,7 @@ MonoBehaviour:
   _audioSource: {fileID: 5723934620663113977}
   _deathAudio: {fileID: 5723934620663113977}
   _damageAudio: {fileID: 5723934620663113977}
+  _healSound: {fileID: 0}
   _sRenderer: {fileID: 2646001990712214237}
   _dropChance: 0
   _droppedLoot: {fileID: 7358707285869751435, guid: b95d3f5be0355a444bcd44e0f46cc1f6, type: 3}
@@ -192,7 +193,7 @@ MonoBehaviour:
   _attackDelay: 1
   _moveSpeed: 1.4
   _attackArea: {fileID: 2646001991092948081}
-  _strawbatAnimator: {fileID: 0}
+  _strawbatAnimator: {fileID: -7376644037900365142}
 --- !u!114 &2646001990712214233
 MonoBehaviour:
   m_ObjectHideFlags: 0
