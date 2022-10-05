@@ -24,6 +24,8 @@ public class Health : MonoBehaviour
     [SerializeField]
     private AudioSource _damageAudio;
     [SerializeField]
+    private AudioSource _healSound;
+    [SerializeField]
     private Renderer _sRenderer;
     [SerializeField] 
     private int _dropChance = 10;
@@ -100,6 +102,7 @@ public class Health : MonoBehaviour
         }
         else
         {
+            _healSound.Play();
             this._health += amount;
         }
         
